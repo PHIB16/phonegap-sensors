@@ -1,7 +1,7 @@
-var newFreq = 3000;
+
 var watchID;
 var accelerometerOptions = { frequency: 2000 };  // Update every 2 seconds
-accelerometerOptions.frequency = newFreq; //changed my mind - now 3 seconds
+accelerometerOptions.frequency = 3000; //changed my mind - now 3 seconds
 
 
 //when the page is created...
@@ -57,7 +57,7 @@ function accelerometerError() {
 }
 
 function updateFreq(freq) {
-	newFreq = freq;
+	accelerometerOptions.frequency = newFreq;
 }
 
 
